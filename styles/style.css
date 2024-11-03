@@ -1,0 +1,308 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #3e2a1c;
+    color: #fff;
+}
+
+header {
+    background-color: #2a1a0d;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('coffee-bg.jpg'); /* Optional: Add a background image here */
+    background-size: cover;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+
+footer {
+    background-color: #2a1a0d;
+    text-align: center;
+    padding: 10px;
+    margin-top: -50px;
+    height: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Example font */
+
+.hero h1 {
+    font-family: 'Pacifico', cursive; /* This gives it a script-like appearance */
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px #3e2a1c; /* Dark shadow effect */
+    letter-spacing: 1px;
+
+}
+
+.bg_img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+     filter: blur(8px);
+     z-index: -1;
+}
+
+.hero h1 span {
+    display: inline-block;
+    position: relative;
+}
+
+.hero h1 span::before,
+.hero h1 span::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    bottom: -5px;
+}
+
+.hero h1 span::before {
+    left: 0;
+    opacity: 0.6;
+}
+
+.hero h1 span::after {
+    right: 0;
+    opacity: 0.3;
+}
+
+
+#content{
+    width: 100%;
+    height: 300px;
+    background-color: #FFF1DA;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#wrap {
+    position: relative;
+    min-height: 100vh; /* Висота контейнера буде на всю висоту вікна */
+    padding-bottom: 50px; /* Відступ для футера, щоб він не перекривав контент */
+}
+
+/* Стилі для форми замовлення */
+.order-form {
+    background-color: #4b3621;
+    color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.order-form h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFF1DA;
+}
+
+.order-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1em;
+}
+
+.order-form select, .order-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 20px;
+    border: 1px solid #3e2a1c;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.order-form button {
+    background-color: #2a1a0d;
+    color: #FFF1DA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+    background-color: #3e2a1c;
+}
+
+
+/* Основне стилізоване меню */
+header {
+    background-color: #2a1a0d;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Позиціонування основного пункту меню Country */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Підменю для вибору країни */
+.dropdown-menu {
+    display: none; /* Приховане за замовчуванням */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4b3621;
+    min-width: 100px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    padding: 10px 0;
+}
+
+/* Пункти підменю */
+.dropdown-menu a {
+    color: #fff;
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #3e2a1c;
+}
+
+/* Показує підменю при наведенні */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.survey {
+    background-color: #4b3621;
+    color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.survey h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFF1DA;
+}
+
+/* Стилі для елементів форми */
+.survey label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1em;
+}
+
+.survey input[type="text"],
+.survey input[type="email"],
+.survey textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 20px;
+    border: 1px solid #3e2a1c;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Кнопка відправки */
+.survey button {
+    background-color: #2a1a0d;
+    color: #FFF1DA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.survey button:hover {
+    background-color: #3e2a1c;
+}
+
+/* Стиль для секції новин */
+.news {
+    background-color: #4b3621;
+    color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.news h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFF1DA;
+}
+
+/* Стиль для кожної статті */
+.news article {
+    background-color: #3e2a1c;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #FFF1DA;
+    text-align: left;
+}
+
+.news h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    color: #FFF1DA;
+}
+
+.news p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #180F07;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 30px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}

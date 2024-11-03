@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Coffee</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<div id="wrap">
+    <img src="../img/coffee_background.jpg" alt="" class="bg_img">
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./survey.html">Survey</a>
+            <a href="./news.html">News</a>
+            <a href="./order.html">Order Coffee</a>
+
+            <div class="dropdown">
+            <a href="#">Country &#9662;</a>
+            <div class="dropdown-menu">
+                <a href="./order.html#USA">USA</a>
+                <a href="./order.html#Canada">Canada</a>
+                <a href="./order.html#UK">UK</a>
+                <a href="./order.html#Australia">Australia</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1><span>Order Your Favorite</span><br><span>Coffee!</span></h1>
+    </section>
+
+    <section id="cont">
+        <div class="order-form">
+            <h2>Place Your Coffee Order</h2>
+            <form action="#" method="post">
+                <label for="coffee-type">Select Coffee Type:</label>
+                <select id="coffee-type" name="coffee-type" required>
+                    <option value="espresso">Espresso</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="americano">Americano</option>
+                    <option value="mocha">Mocha</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+    <a href="#top" class="back-to-top">▲</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Our Coffee Shop</p>
+</footer>
+
+</body>
+</html>

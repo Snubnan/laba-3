@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Our Coffee Shop</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<div id='wrap'>
+    <img src="../img/coffee_background.jpg" alt="" class="bg_img">
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>   
+            <a href="./survey.html">Survey</a>
+            <a href="./news.html">News</a>
+            <a href="./order.html">Order Coffee</a>
+
+            <div class="dropdown">
+            <a href="#">Country &#9662;</a>
+
+            <div class="dropdown-menu">
+                <a href="./order.html#USA">USA</a>
+                <a href="./order.html#Canada">Canada</a>
+                <a href="./order.html#UK">UK</a>
+                <a href="./order.html#Australia">Australia</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <section class="survey">
+        <h2>Customer Feedback</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Experience:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <a href="#top" class="back-to-top">▲</a>
+</div>
+    <footer>
+        <p>&copy; 2024 Our Coffee Shop</p>
+    </footer>
+</body>
+</html>
